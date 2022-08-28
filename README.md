@@ -195,4 +195,5 @@ Feedstock Maintainers
 =====================
 
 * [@awvwgk](https://github.com/awvwgk/)
+* [@gnikit](https://github.com/gnikit/)
 
