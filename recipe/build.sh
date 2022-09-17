@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 set -ex
 
-./configure \
+mkdir build
+pushd build
+../configure \
    "--prefix=${PREFIX}" \
    "--with-flex" \
    "--with-bison"
@@ -11,3 +13,4 @@ if [[ "${CONDA_BUILD_CROSS_COMPILATION:-}" != "1" || "${CROSSCOMPILING_EMULATOR}
 make check
 fi
 make install
+popd
