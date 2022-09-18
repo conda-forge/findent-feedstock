@@ -20,8 +20,11 @@ requirements:
     - {{ compiler('cxx') }}
     - bison
     - flex
+    - libtool
+    - automake
     - autoconf
     - make
+    - perl
 
 test:
   commands:

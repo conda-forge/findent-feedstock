@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -ex
 
+autoreconf -fvi
+
 mkdir build
 pushd build
 ../configure \
