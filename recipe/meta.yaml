@@ -17,8 +17,9 @@ build:
 requirements:
   build:
     - {{ compiler('cxx') }}
-    - bison
-    - flex
+    - winflexbison  # [win]
+    - bison  # [unix]
+    - flex   # [unix]
     - autotools_clang_conda  # [win]
     - libtool   # [unix]
     - automake  # [unix]
