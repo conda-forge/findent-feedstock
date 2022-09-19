@@ -12,17 +12,17 @@ source:
     - man-page.patch  # [target_platform != build_platform]
 
 build:
-  number: 0
-  skip: true  # [win]
+  number: 1
 
 requirements:
   build:
     - {{ compiler('cxx') }}
     - bison
     - flex
-    - libtool
-    - automake
-    - autoconf
+    - autotools_clang_conda  # [win]
+    - libtool   # [unix]
+    - automake  # [unix]
+    - autoconf  # [unix]
     - make
     - perl
 
@@ -31,14 +31,14 @@ test:
     - findent --version
 
 about:
-  home: https://sourceforge.net/projects/{{ name }}/
+  home: https://www.ratrabbit.nl/ratrabbit/findent/
   license: BSD-3-Clause
   license_family: BSD
   license_file:
     - COPYING
   summary: Indents/beautifies/converts Fortran sources.
-  doc_url: https://sourceforge.net/p/{{ name }}/wiki/
-  dev_url: https://sourceforge.net/p/{{ name }}/code/HEAD/tree/
+  doc_url: https://sourceforge.net/p/findent/wiki/
+  dev_url: https://github.com/wvermin/findent
 
 extra:
   recipe-maintainers:

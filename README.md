@@ -1,7 +1,7 @@
 About findent
 =============
 
-Home: https://sourceforge.net/projects/findent/
+Home: https://www.ratrabbit.nl/ratrabbit/findent/
 
 Package license: BSD-3-Clause
 
@@ -9,7 +9,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/findent-feedsto
 
 Summary: Indents/beautifies/converts Fortran sources.
 
-Development: https://sourceforge.net/p/findent/code/HEAD/tree/
+Development: https://github.com/wvermin/findent
 
 Documentation: https://sourceforge.net/p/findent/wiki/
 
@@ -70,6 +70,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10828&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/findent-feedstock?branchName=main&jobName=osx&configuration=osx_arm64_" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10828&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/findent-feedstock?branchName=main&jobName=win&configuration=win_64_" alt="variant">
                 </a>
               </td>
             </tr>
