@@ -1,5 +1,5 @@
 {% set name = "findent" %}
-{% set version = "4.4.0" %}
+{% set version = "4.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://downloads.sourceforge.net/project/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 52b416e21305fed42cb8f9bfd18b368fb50e747c0e5d9ab372dded3b9ea16089
+  sha256: 4a44b52cb111c4fdf88752430d20041150fbb5b60f9edac3a2fd513ddc96d1ed
 
 build:
   number: 0
